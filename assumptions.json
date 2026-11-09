@@ -1,0 +1,23 @@
+{
+  "_note": "Ranges are [low, mid, high]. Sources are public benchmarks gathered in October 2026; 'assumption' means no direct source and should be validated with real data.",
+  "revenue": {
+    "installs_per_day": {"range": [12, 100, 500], "source": "Indie developer blogs and forums: ~12/day for a hyper-casual case, 'rarely more than 200-500 organic per day'. Low confidence."},
+    "retention_d1": {"range": [0.22, 0.275, 0.375], "source": "GameAnalytics 2026 (median 22%); AppAgent 2026 (average 25-30%, good 35-40%)."},
+    "retention_d30": {"range": [0.008, 0.045, 0.09], "source": "GameAnalytics 2026 (median <1%); AppAgent 2026 (average 3-6%, good 8-10%)."},
+    "ad_impressions_per_dau": {"range": [3, 5, 8], "source": "Assumption, weakly supported: a single unverified source quotes 5-8."},
+    "ecpm_usd": {"range": [2.0, 5.0, 9.0], "source": "Derived assumption: Europe Android rewarded ~$8.9, interstitial $3.6-5.3, banner <$2 (Playio 2026); blended mix with no direct figure."},
+    "remove_ads_purchase_rate": {"range": [0.005, 0.015, 0.035], "source": "Paying conversion in mobile games 1.5-3.5% of actives (2026 blog). The low value is an assumption for a remove-ads-only offer."},
+    "remove_ads_price_eur": {"range": [1.99, 2.99, 4.99], "source": "Assumption."},
+    "store_fee": {"value": 0.15, "source": "Google Play: 15% on the first USD 1M per year (enrolment required)."},
+    "eur_per_usd": {"value": 0.9, "source": "Approximate exchange rate."}
+  },
+  "acquisition": {
+    "paid_cpi_usd": {"value": 1.85, "source": "Cost per paid install, casual games, Android, Western Europe: industry blog (2026) without a clear primary source. Low confidence."}
+  },
+  "monthly_costs_eur": {
+    "tooling": {"basic": 20.0, "standard": 107.1, "premium": 216.44, "source": "AI coding assistant subscription tiers, European prices including VAT."},
+    "self_employed_fee": {"reduced_rate": 88.64, "minimum_general": 205.88, "source": "Spanish self-employed social security: reduced flat rate for the first 12 months, then from ~EUR 206."},
+    "apple_developer": {"value": 8.25, "source": "Apple Developer Program, USD 99 per year; only needed for iOS."},
+    "other": {"value": 0.0, "source": "Domain, design, accountant: not budgeted."}
+  }
+}

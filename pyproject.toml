@@ -1,0 +1,13 @@
+[project]
+name = "mobile-game-unit-economics"
+version = "1.0.0"
+description = "Unit economics of an ad-funded casual mobile game"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0", "matplotlib==3.11.2"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
